@@ -1,11 +1,11 @@
 { "questions": [{
     "owner": "Eric Maranga",
     "subject": "Hijacking and technology",
-    "Question": "How to Install a problem"
+    "query": "How to Install a problem"
   },
   {
     "owner": "Yonko Kilasi",
     "subject": "Eleven Reasons To Be Excited About The Future of Technology",
-    "Question": "How to make pineappple upside down cake"
+    "query": "How to make pineappple upside down cake"
   }]
 }
