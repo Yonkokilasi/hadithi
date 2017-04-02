@@ -8,7 +8,7 @@ export default Ember.Route.extend({
   actions: {
     saveQuestion(params) {
       var newQuestion = this.store.createRecord('question', params);
-      newquestion.save();
+      newQuestion.save();
       this.transitionTo('index');
     },
     destroyquestion(question) {
@@ -18,11 +18,11 @@ export default Ember.Route.extend({
     update(question, params) {
       Object.keys(params).forEach(function(key) {
         if (params[key] !== undefined) {
-          post.set(key,params[key]);
+          question.set(key,params[key]);
         }
     });
-    question.save()
-    this.transitionTo('index')
+    question.save();
+    this.transitionTo('index');
 },
   }
 });
