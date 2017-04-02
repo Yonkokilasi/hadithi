@@ -4,7 +4,7 @@
 <h2>{{question.subject}}</h2>
 By {{question.owner}} <br>
 <p>{{question.query}}</p>
-
+{{question-tile question=question update="update" destroyQuestion="destroyQuestion"}}
 {{/each}}
 {{new-question}}
 {{outlet}}
