@@ -1,1 +1,27 @@
-{{yield}}
+{{#if updateQuestionForm}} <!--Now get this, the addNewquestion is the value that is either true or false, hence the if statements below it -->
+  <h1>New Blog </h1>
+  <div>
+    <form class="jumbotron">
+      <div class="form-group">
+        <label for="owner">Author</label>
+        {{input value = owner id="owner" placeholder=question.owner}}
+      </div>
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        {{input value = subject id="subject" placeholder=question.subject}}
+      </div>
+
+      <div class="form-group">
+        <label for="query">Question</label>
+        {{input value = query
+ id="query" placeholder=question.query
+}}
+      </div>
+
+      </div>
+      <button {{action 'update' question}}>Save</button>
+    </form>
+  </div>
+{{else}}
+  <button {{action 'updateQuestion'}}> Update question</button>
+{{/if}}
