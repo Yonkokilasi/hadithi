@@ -13,8 +13,8 @@ export default Ember.Component.extend({
                 query: this.get('query'),
             };
             this.set ('addNewQuestion',false);
-            this.sendAction('saveQuestion',params)
-        }
+            this.sendAction('saveQuestion',params);
+        },
         hideForm() {
             this.set('addNewQuestion',false);
         }
