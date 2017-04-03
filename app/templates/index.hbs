@@ -7,4 +7,5 @@ By {{question.owner}} <br>
 {{question-tile question=question update="update" destroyQuestion="destroyQuestion"}}
 {{/each}}
 {{new-question saveQuestion="saveQuestion"}}
-{{outlet}}
+{{#link-to 'about'}}About{{/link-to}}
+{{#link-to 'contact'}}Click here to contact us.{{/link-to}}
