@@ -12,6 +12,7 @@ export default Ember.Component.extend({
                 subject: this.get('subject'),
                 query: this.get('query'),
         };
+        // debugger;
         this.set('updateQuestionForm',false);
         this.sendAction('update', question, params);
     }

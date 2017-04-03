@@ -1,7 +1,5 @@
 <p>
-
-     {{#link-to 'question' question.id}}{{question.owner}}'s {{question.subject}}{{/link-to}}
+     {{#link-to 'question' question.id}} {{question.owner}}'s {{question.subject}}{{/link-to}}
 {{update-tile question=question update="update"}}
 <button {{action 'delete' question}}>Delete Question</button>
-
 </p>
