@@ -1,7 +1,11 @@
-# hadithi-blog
+# author
+    Joseph Kilai
+
+## hadithi-blog
 
 This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This app is a question and answer Message Board. Whereby one can post a Q and other users can answer it .
+It was created for MC2 IP3
 
 ## Prerequisites
 
@@ -41,7 +45,8 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Deploying
 
-Specify what it takes to deploy your app.
+One can create an account on Heroku or any other hosting platform and host it there.
+I have done the same and mine is deployed here : https://cryptic-crag-28542.herokuapp.com/
 
 ## Further Reading / Useful Links
 
