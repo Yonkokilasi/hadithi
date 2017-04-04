@@ -7,5 +7,12 @@
     "owner": "Yonko Kilasi",
     "subject": "Eleven Reasons To Be Excited About The Future of Technology",
     "query": "How to make pineappple upside down cake"
-  }]
+  }],
+  "answers": [{
+      "author":"Life",
+      "response":"Follow nature",
+  },
+  {"author":"Nature",
+  "response":"Follow Life",
+      }]
 }
