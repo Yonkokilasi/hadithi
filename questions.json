@@ -10,9 +10,9 @@
   }],
   "answers": [{
       "author":"Life",
-      "response":"Follow nature",
+      "response":"Follow nature"
   },
   {"author":"Nature",
-  "response":"Follow Life",
+  "response":"Follow Life"
       }]
 }
