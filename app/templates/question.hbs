@@ -1,5 +1,7 @@
 <h2>More information about {{question.owner}}'s {{question.query}}</h2>
 
-{{question-detail  question=model destroyQuestion="destroyQuestion"}}
+{{question-detail  question=model}}
 {{update-tile question-tile question=model update="update"}}
+<h2> Responses </h2>
+
 {{new-answer saveAnswer="saveAnswer" question=model}}
