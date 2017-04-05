@@ -2,3 +2,8 @@
 By {{question.owner}} <br>
 <p>{{question.query}}</p>
 <button {{action 'delete' question}}>Delete</button>
+<h2> Responses </h2>
+<ul>
+  {{#each question.answer as |answer|}}
+    {{answer-tile answer=answer}}
+  {{/each}}
