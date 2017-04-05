@@ -2,8 +2,8 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
     addNewAnswer : false,
-    action: {
-        answerFormShow() {
+    actions: {
+        AnswerForm() {
             this.set('addNewAnswer',true);
         },
         saveAnswer() {
