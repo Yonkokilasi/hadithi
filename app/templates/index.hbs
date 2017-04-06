@@ -1,10 +1,10 @@
 
  {{new-question saveQuestion="saveQuestion"}}
-<ul>
+<ol>
   {{#each model.questions as |question|}}
     {{question-popularity question}} {{question-tile question=question}}
   {{/each}}
-  {{new-question saveQuestion="saveQuestion"}}
-</ul>
+
+</ol>
 {{#link-to 'about'}}About{{/link-to}}
 {{#link-to 'contact'}}Click here to contact us.{{/link-to}}
