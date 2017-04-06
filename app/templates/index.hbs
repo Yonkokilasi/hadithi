@@ -1,14 +1,10 @@
 <h1>Hadithi Question and Answer Board</h1>
-<!-- {{#each model.questions as |question|}}
-     {{question-tile update="update" question=question destroyQuestion="destroyQuestion"}}
-{{/each}}
-{{new-question saveQuestion="saveQuestion"}}
-
-<hr> -->
+<hr>
 <ul>
   {{#each model.questions as |question|}}
     {{question-popularity question}} {{question-tile question=question}}
   {{/each}}
+  {{new-question saveQuestion="saveQuestion"}}
 </ul>
 {{#link-to 'about'}}About{{/link-to}}
 {{#link-to 'contact'}}Click here to contact us.{{/link-to}}
