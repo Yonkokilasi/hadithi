@@ -15,11 +15,16 @@ export default Ember.Route.extend({
   question.save();
   this.transitionTo('index');
 },
-// destroyQuestion(question) {
-//   question.destroyRecord();
-//   this.transitionTo('index');
-// },
+destroyQuestion(question) {
+  question.destroyRecord();
+  this.transitionTo('index');
+},
+
 // This (above) allows for one to be able to delete a Q
+destroyAnswer(answer) {
+  answer.destroyRecord();
+  this.transitionTo('index');
+},
 saveAnswer(params) {
       var newAnswer = this.store.createRecord('answer', params);
       var question = params.question;
@@ -33,20 +38,17 @@ saveAnswer(params) {
     var newQuestion = this.store.createRecord('question', params);
     newQuestion.save();
     this.transitionTo('index');
-},
-destroyAnswer(answer) {
-  answer.destroyRecord();
-  this.transitionTo('index');
-},
-destroyQuestion(question) {
-  var answer_deletions = question.get('answers').map(function(answer) {
-    return answer.destroyRecord();
-  });
-  Ember.RSVP.all(answer_deletions).then(function() {
-    return question.destroyRecord();
-  });
-  this.transitionTo('index');
-},
+}
+
+// destroyQuestion(question) {
+//   var answer_deletions = question.get('answers').map(function(answer) {
+//     return answer.destroyRecord();
+//   });
+//   Ember.RSVP.all(answer_deletions).then(function() {
+//     return question.destroyRecord();
+//   });
+//   this.transitionTo('index');
+// },
 
   }
 });
