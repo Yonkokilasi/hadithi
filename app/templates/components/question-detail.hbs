@@ -4,7 +4,7 @@ By {{question.owner}} <br>
 
 
 <ul>
-  {{#each model.answers as |answer|}}
-    <li> By {{answer.author}} - {{answer.response}} </li>
-  {{/each}}
+    {{#each question.answers as |answer|}}
+      {{answer-tile answer=answer destroyAnswer="destroyAnswer"}}
+    {{/each}}
 </ul>

@@ -8,8 +8,13 @@ export default Ember.Component.extend({
   delete(question) {
     if (confirm("Are you sure you want to delete this Question?")){
         this.sendAction('destroyQuestion', question);
-        
+
         }
-    }
+    },
+    deleted(answer) {
+      if (confirm("Are you sure you want to delete this response?")){
+          this.sendAction('destroyAnswer', answer);
+          }
+      }
   }
 });
