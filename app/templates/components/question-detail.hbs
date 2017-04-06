@@ -5,5 +5,6 @@ By {{question.owner}} <br>
 <ul>
     {{#each question.answers as |answer|}}
       {{answer-tile answer=answer destroyAnswer="destroyAnswer"}}
+      <button {{action 'deleted' answer}}>Delete Answer</button>
     {{/each}}
 </ul>

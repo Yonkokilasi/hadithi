@@ -2,7 +2,7 @@
 <h2>More information about {{question.query}}</h2>
 
 {{question-detail  question=model}}
-{{update-tile question-tile question=model update="update"}}
+{{update-tile question-tile question=model update="update" destroyQuestion="destroyQuestion" destroyAnswer="destroAnswer}}
 <h2> Responses </h2>
 
 {{new-answer saveAnswer="saveAnswer" question=model}}

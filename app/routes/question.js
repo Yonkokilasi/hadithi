@@ -10,14 +10,16 @@ export default Ember.Route.extend({
     if(params[key]!==undefined) {
       question.set(key,params[key]);
     }
+    // function above allows for updated Qs to be stored in firebase
   });
   question.save();
   this.transitionTo('index');
 },
-destroyQuestion(question) {
-  question.destroyRecord();
-  this.transitionTo('index');
-},
+// destroyQuestion(question) {
+//   question.destroyRecord();
+//   this.transitionTo('index');
+// },
+// This (above) allows for one to be able to delete a Q
 saveAnswer(params) {
       var newAnswer = this.store.createRecord('answer', params);
       var question = params.question;
@@ -31,6 +33,20 @@ saveAnswer(params) {
     var newQuestion = this.store.createRecord('question', params);
     newQuestion.save();
     this.transitionTo('index');
-  }
+},
+destroyAnswer(answer) {
+  answer.destroyRecord();
+  this.transitionTo('index');
+},
+destroyQuestion(question) {
+  var answer_deletions = question.get('answers').map(function(answer) {
+    return answer.destroyRecord();
+  });
+  Ember.RSVP.all(answer_deletions).then(function() {
+    return question.destroyRecord();
+  });
+  this.transitionTo('index');
+},
+
   }
 });
