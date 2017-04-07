@@ -15,10 +15,7 @@ export default Ember.Route.extend({
   question.save();
   this.transitionTo('index');
 },
-// destroyQuestion(question) {
-//   question.destroyRecord();
-//   this.transitionTo('index');
-// },
+
 // This (above) allows for one to be able to delete a Q
 saveAnswer(params) {
       var newAnswer = this.store.createRecord('answer', params);
@@ -34,7 +31,6 @@ saveAnswer(params) {
     newQuestion.save();
     this.transitionTo('index');
 },
-
 destroyQuestion(question) {
   var answer_deletions = question.get('answers').map(function(answer) {
     return answer.destroyRecord();
@@ -43,7 +39,7 @@ destroyQuestion(question) {
     return question.destroyRecord();
   });
   this.transitionTo('index');
-},
+}
 
   }
 });
