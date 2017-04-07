@@ -1,11 +1,13 @@
 # author
-    Joseph Kilai
+    Joseph Kilasi
 
-## hadithi-blog
+## Hadithi-blog
 
 This README outlines the details of collaborating on this Ember application.
 This app is a question and answer Message Board. Whereby one can post a Q and other users can answer it .
-It was created for MC2 IP3
+It was created for MC2 IP3 and IP4
+It is meant to help people who have problems.
+A user may go to the site and post a Q. They can then check back later to see if anyone has posted a soultuion
 
 ## Prerequisites
 
