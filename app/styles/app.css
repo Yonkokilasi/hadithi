@@ -1,16 +1,19 @@
 body{
     background-image: url(https://images3.alphacoders.com/723/72397.jpg);
-    color: red;
+    color: FireBrick;
+    font-size: 20px;
 }
 h2{
     font-family: 'BioRhyme', serif;
 }
 h1{
     font-family: 'Palanquin Dark', sans-serif;
+    color: seaShell;
 }
 button{
     color: black
 }
 a {
+    font-family: 'BioRhyme', serif;
     color: white;
 }
