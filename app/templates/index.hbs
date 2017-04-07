@@ -11,7 +11,7 @@
 <ul>
   {{#each model.reviews as |review|}}
     <li>{{review.rating}}  - by {{review.author}}</li>
-      {{/each}}      
+      {{/each}}
       </ul>
+      {{new-review saveReview="saveReview"}}
 {{#link-to 'about'}}About{{/link-to}}
-{{#link-to 'contact'}}Click here to contact us.{{/link-to}}

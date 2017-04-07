@@ -6,3 +6,11 @@
 <h2> Responses </h2>
 
 {{new-answer saveAnswer="saveAnswer" question=model}}
+<h2> All Reviews of responses</h2>
+
+<ul>
+  {{#each model.reviews as |review|}}
+    <li>{{review.rating}}  - by {{review.author}}</li>
+  {{/each}}
+</ul>
+{{new-review saveReview="saveReview"}}

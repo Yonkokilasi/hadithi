@@ -22,6 +22,11 @@ export default Ember.Route.extend({
             question.destroyRecord();
             this.transitionTo('index');
           },
+        saveReview(params) {
+      var newReview = this.store.createRecord('review', params);
+      newReview.save();
+      this.transitionTo('index');
+  },
     saveQuestion(params) {
       var newQuestion = this.store.createRecord('question', params);
       newQuestion.save();

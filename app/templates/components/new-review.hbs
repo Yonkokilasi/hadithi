@@ -1,4 +1,4 @@
-{#if addNewReview}}
+{{#if addNewReview}}
 <h1>New Review</h1>
   <div>
     <form>
@@ -13,6 +13,6 @@
       <button {{action 'saveReview'}}>Save</button>
     </form>
   </div>
-{{else}}
+ {{else}}
   <button {{action 'reviewFormShow'}}>New Review</button>
 {{/if}}
