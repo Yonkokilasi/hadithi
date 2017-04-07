@@ -1,6 +1,7 @@
 body{
-    background-image: url(https://images3.alphacoders.com/723/72397.jpg);
-    color: FireBrick;
+    background-image: url(http://www.bhmpics.com/thumbs/funny_danbo_skateboard-t3.jpg);
+    background-size: cover;
+    color: black;
     font-size: 20px;
 }
 h2{
@@ -8,12 +9,14 @@ h2{
 }
 h1{
     font-family: 'Palanquin Dark', sans-serif;
-    color: seaShell;
+    color: orange;
 }
 button{
     color: black
 }
 a {
     font-family: 'BioRhyme', serif;
-    color: white;
+    color: orange;
+    font-weight: bold;
+    font-size: 25px
 }
